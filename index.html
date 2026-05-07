@@ -1,1 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Necesaria para sitio web responsive e3n celulares.-->
+<title title="Cafe internet GYG">Medicina Prolearn</title>
+<meta name="keywords" content="eps, procuraduria, contraloria, policia, sisben, ruth, camara, comercio, pasaporte, papeleria, accesorios, celulares, comptadores, tables, usb, camaras, vigilancia, fotocopias, impresiones, scanner, motos, comestibles, digitaci&oacute;n, medicna, enfermedades, curación,">
+<meta name="author" content="Prolearnjosecano">
+<meta name="description" content="Cursos de estudios de medicina general y avanzada para estudios m&eacute;dicos hospitalarios, diagnostico, empleabilidad y salud. Evoluci&oacute;n del avance tegnol&oacute;gico.">
+<meta name="robots" content="index, follow">
+<meta name="generator" content="Visual estudio code 1.116.0">
+<link rel="stylesheet" href="./Css/Css.css">
+<script src="./Js/Js.js"></script>
+<link rel="shortcut icon" href="./ImGs/Icono/favicon.ico" type="image/x-icon">
+<meta http-equiv="Content-Security-Policy">
+<meta name="theme-color" content="aqua">
+</head>
+<body onload="salu()">
+<header>
+<div class="divprin">
+<div class="divsec">
+<a href="./ImGs/Logo1.jpg">
+<img src="./ImGs/Logo1.jpg" alt="Logo principal de la empresa Internet GYG">
+</a>
+</div>
+</div>
+</header>
 
+<nav>
+<hr noshade="">
+<button type="button" class="butnav" onclick="buini()">Inicio</button>
+<select name="selpro" id="selpro">
+<option value="0">Productos:</option>
+<option value="1">Medicamentos:</option>
+<option value="2" title="">Herramientas:</option>
+<option value="3">C&aacute;maras de vigilancia:</option>
+<option value="4">Nutrici&oacute;n:</option>
+<option value="5">Insumos:</option>
+<option value="6">Desechables:</option>
+<option value="7">Productos de sesinfecci&oacute;n:</option>
+<option value="8">En construcci&oacute;n:</option>
+<option value="9">En construcci&oacute;n:</option>
+</select>
+
+<select name="selsert" id="sels" onchange="sws(this.value)">
+<option value="10">Certificados:</option>
+<option value="11">Eps:</option>
+<option value="12">Procuraduria:</option>
+<option value="13">Contraloria:</option>
+<option value="14">Policia:</option>
+<option value="15">Consulta RNMC:</option>
+<option value="16">Ruth:</option>
+<option value="17">Camara de comercio:</option>
+<option value="18">Citas de pasaporte:</option>
+<option value="19">Tr&aacute;mites AC:</option>
+<option value="20">Sisben:</option>
+<option value="21">En construcci&oacute;n:</option>
+<option value="22">En construcci&oacute;n:</option>
+<option value="23">En construcci&oacute;n:</option>
+<option value="24">En construcci&oacute;n:</option>
+<option value="25">En construcci&oacute;n:</option>
+<option value="26">En construcci&oacute;n:</option>
+<option value="27">En construcci&oacute;n:</option>
+<option value="28">En construcci&oacute;n:</option>
+<option value="29">En construcci&oacute;n:</option>
+</select>
+
+<select name="selcur" id="selcur">
+<option value="30">Cursos Cortos:</option>
+<option value="31" title="Manejo de herramientas ofim&aacute;ticas entre ellas, word, excel, correo electr&oacute;nico, paint, recortes, porwer point, navegador, compresor, calculadora, lector de libros, grabadora de audio, block de notas, trabajo con carpetas, navegadores.">B&aacute;sico de sistemas:</option>
+<option value="32">Pseudoc&oacute;digo:</option>
+<option value="33">Desarrollo web:</option>
+<option value="34" title="Se enseña a inscribirse en una red social, como aprovecharla, editarla, filtrarla, o organizarla para convertirla en una herramienta de trabajo.">Redes sociales:</option>
+<option value="35" title="Se ense&ntilde;a a crear contenido en un blog, en yotube, crear video para luego subirlos a p&aacute;ginas web donde puedan generar alg&uacute;n ingreso o posiblemente ofertar un producto o servicio.">Creador de contenidos:</option>
+<option value="36">Mantenimiento de equipos de computo:</option>
+<option value="37">Primeros auxilios:</option>
+<option value="38">Digitaci&oacute;n:</option>
+<option value="39">Enfermeria:</option>
+<option value="40">En construcci&oacute;n:</option>
+<option value="41">En construcci&oacute;n:</option>
+<option value="42">En construcci&oacute;n:</option>
+<option value="43">En construcci&oacute;n:</option>
+<option value="44">En construcci&oacute;n:</option>
+<option value="45">En construcci&oacute;n:</option>
+<option value="46">En construcci&oacute;n:</option>
+<option value="47">En construcci&oacute;n:</option>
+<option value="48">En construcci&oacute;n:</option>
+<option value="49">En construcci&oacute;n:</option>
+<option value="50">En construcci&oacute;n:</option>
+<option value="51">En construcci&oacute;n:</option>
+<option value="52">En construcci&oacute;n:</option>
+<option value="53">En construcci&oacute;n:</option>
+<option value="54">En construcci&oacute;n:</option>
+<option value="55">En construcci&oacute;n:</option>
+<option value="56">En construcci&oacute;n:</option>
+<option value="57">En construcci&oacute;n:</option>
+<option value="58">En construcci&oacute;n:</option>
+<option value="59">En construcci&oacute;n:</option>
+</select>
+
+<select name="seluh" id="seluh">
+<option value="60">Unidades hospitalarias metro salud:</option>
+<option value="61">UH de manrique:</option>
+<option value="62">UH de Belen:</option>
+<option value="63">UH Santa cruz:</option>
+<option value="64">UH San javier:</option>
+<option value="65">UH Castilla:</option>
+<option value="66">UH Doce de octubre:</option>
+<option value="67">UH San cristobal:</option>
+<option value="68">UH San antonio de prado:</option>
+<option value="69">UH Nuevo Occidente:</option>
+<option value="70">UH </option>
+<option value="71"></option>
+<option value="72"></option>
+<option value="73"></option>
+<option value="74"></option>
+<option value="75"></option>
+<option value="76"></option>
+<option value="77"></option>
+<option value="78"></option>
+<option value="79"></option>
+<option value="80"></option>
+<option value="81"></option>
+<option value="82"></option>
+<option value="83"></option>
+<option value="84"></option>
+<option value="85"></option>
+<option value="86"></option>
+<option value="87"></option>
+<option value="88"></option>
+<option value="89"></option>
+</select>
+
+<select name="seluhac" id="seluhac">
+<option value="90">Unidades hospitalarias de alta complejidad:</option>
+<option value="91">Hospital general de medell&iacute;n:</option>
+<option value="92">Hospital universitario san vicente fundaci&oacute;n:</option>
+<option value="93">Ips universitarioa Cl&iacute;nica Le&oacute;n XIII:</option>
+<option value="94"></option>
+<option value="95"></option>
+<option value="96"></option>
+<option value="97"></option>
+<option value="98"></option>
+<option value="99"></option>
+<option value="100"></option>
+<option value="101"></option>
+<option value="101"></option>
+<option value="102"></option>
+<option value="103"></option>
+<option value="104"></option>
+<option value="105"></option>
+<option value="16"></option>
+<option value="107"></option>
+<option value="108"></option>
+<option value="109"></option>
+</select>
+
+<select name="selhp" id="selhp">
+<option value="110">Cl&iacute;nicas y hospitales privados:</option>
+<option value="111">Hospital pablo tobón uribe:</option>
+<option value="112">Cl&iacute;nica las am&eacute;ricas auna:</option>
+<option value="113">Cl&iacute;nica el rosario:</option>
+<option value="114">Cl&iacute;nica las vegas:</option>
+<option value="115">Cl&iacute;nica medell&iacute;n:</option>
+<option value="116">Cl&iacute;nica Cardio VID:</option>
+<option value="117"></option>
+<option value="118"></option>
+<option value="119"></option>
+<option value="120"></option>
+<option value="121"></option>
+<option value="122"></option>
+<option value="123"></option>
+<option value="124"></option>
+<option value="125"></option>
+<option value="126"></option>
+<option value="127"></option>
+<option value="128"></option>
+<option value="129"></option>
+</select>
+
+<select name="selsisch" id="selsisch">
+<option value="151">Sistemas del cuerpo humano:</option>
+<option value="152" title="Compuesto por 206 huesos, cartilagos y ligamentos logra dar estructura, proteger los organos vitales y almacenar minerales.">Sistemas &Oacute;seo esquel&eacute;tico:</option>
+<option value="153" title="El sistema muscular incluye los musculos esquel&eacute;ticos, lisos y cardiacos que permiten el movimiento voluntario e involuntario generando as&iacute; calor corporal.">Sistema muscular:</option>
+<option value="154" title="Se encuentra formado por la piel, el cabello y las u&ntilde;as. Es la primera barrera contra el exterior y regula la temperatura corporal en interna.">Sistema Integumentario:</option>
+<option value="155" title="El sistema circulatorio cardiovascular es un sistema de transporte y defensa formado por el coraz&oacute;n y los vasos sangu&iacute;neos los cuales transportan &oacute;xigeno, nutrientes, y hormonas a las c&eacute;lulas y ademas eliminan desechos.">Sistema circulatorio cardiacovascular.</option>
+<option value="156" title="Constituido por una red de ganglios y vasos que drenan l&iacute;quidos y defienden al cuerpo contra pat&oacute;genos (Virus y bacterias).">Sistema linf&aacute;tico e inmunitario:</option>
+<option value="157" title="El sistema nervioso es un sistema de regualci&oacute;n y control constituido por el cerebro, la m&eacute;dula espinal y los nervios los cuales procesan la informaci&oacute;n sensorail y controlan las respuestas del cuerpo de forma inmediata.">Sistema nervioso:</option>
+<option value="158" title="El sistema endocrino es un sistema de regualci&oacute;n y control el cu&aacute;l contienn gl&aacute;ndulas que segregan hormonas (mensajeros qu&iacute;micos para regular funciones a largo plazo como el metabolismo, el crecimiento y la reproducci&oacute;n.)">Sistema endocr&iacute;no:</option>
+<option value="159" title="El sistema respiratorio es un sistema de intercambio y mantenimiento que permite la entrada de ox&iacute;geno y la expulsi&oacute;n de diox&iacute;do de carbono atravez de los pulmones y las vias a&eacute;reas.">Sistema respiratorio:</option>
+<option value="160" title="El sistema digestivo transforma los alimentos en nutrientes absorbibles y elimina los desechos solidos.">Sistema digestivo:</option>
+<option value="161" title="El sistema excretor (Urinario), filtra la sangre atravez de los ri&ntilde;ones para regular toxinas y regular el equilibrio de l&iacute;quidos mediante orina.">Sistema excretor:</option>
+<option value="162" title="El sistema reproductor hace parte del sistema de continuidad diferenciado en masculino y femenino, cumpliendo funciones biol&oacute;gicas en la producci&oacute;n de gametos (&oacute;vulos y espermatozoides) para la procreaci&oacute;n.">Sistema reproductor:</option>
+<option value="163"></option>
+<option value="164"></option>
+<option value="165"></option>
+<option value="166"></option>
+<option value="167"></option>
+<option value="168"></option>
+<option value="169"></option>
+<option value="170"></option>
+<option value="171"></option>
+<option value="172"></option>
+<option value="173"></option>
+<option value="174"></option>
+<option value="175"></option>
+<option value="176"></option>
+<option value="177"></option>
+<option value="178"></option>
+<option value="179"></option>
+<option value="180"></option>
+<option value="181"></option>
+<option value="182"></option>
+<option value="183"></option>
+<option value="184"></option>
+<option value="185"></option>
+<option value="186"></option>
+<option value="187"></option>
+<option value="188"></option>
+<option value="189"></option>
+<option value="190"></option>
+<option value="191"></option>
+<option value="192"></option>
+<option value="193"></option>
+<option value="194"></option>
+<option value="195"></option>
+<option value="196"></option>
+<option value="197"></option>
+<option value="198"></option>
+<option value="199"></option>
+<option value="200"></option>
+</select>
+<button type="button" onclick="josecano()">Desarrollo:</button>
+<hr noshade="">
+</nav>
+
+<aside class="asil">
+
+</aside>
+
+<section>
+<main>
+<article>
+<h1>Medicina</h1>
+<p></p>
+</article>
+</main>
+<div class="divprin">
+
+<div class="divsec">
+<marquee behavior="alternate, slide" direction="left" scroollamount="10" loop="8">
+<a href="./ImGs/prod and serv/papeleria.png" title="Papeleria." target="_blank">
+<img src="./ImGs/prod and serv/papeleria.png" alt="papeleria.">
+</a>
+<a href="./ImGs/prod and serv/acccel.png" title="Accesorios de celular." target="_blank">
+<img src="./ImGs/prod and serv/acccel.png" alt="Accesorios cel.">
+</a>
+<a href="./ImGs/prod and serv/accpc.png" title="Accesorios de PC." target="_blank">
+<img src="./ImGs/prod and serv/accpc.png" alt="Accesorios pc.">
+</a>
+<a href="./ImGs/prod and serv/cctv.png" title="Sistemas de circuitos cerrados de televisión." target="_blank">
+<img src="./ImGs/prod and serv/cctv.png" alt="Sistemas de circuitos cerrados de televisión.">
+</a>
+<a href="./ImGs/prod and serv/comekato.png" title="Productos de mekato y dulces varios." target="_blank">
+<img src="./ImGs/prod and serv/comekato.png" alt="Productos de mekato y dulces a la venta.">
+</a>
+<a href="./ImGs/prod and serv/libreria.png" title="Libreria." target="_blank">
+<img src="./ImGs/prod and serv/libreria.png" alt="Libreria.">
+</a>
+</marquee>
+</div>
+<div>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Certificado de eps.">
+</a>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Certificado de procuraduria.">
+</a>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Certificado de contraloria.">
+</a>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Certificado de policia.">
+</a>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Certificado de consulta RNMC.">
+</a>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Certificado de ruth.">
+</a>
+</div>
+<div>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Certificado de cámara de comercio.">
+</a>
+</div>
+<div>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Citas de pasaporte.">
+</a>
+</div>
+<div>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Tr&aacute;mites de la Aeron&aacute;utica civil.">
+</a>
+</div>
+<div>
+<a href="./ImGs/prod and serv/certif.png">
+<img src="./ImGs/prod and serv/certif.png" alt="Tr&aacute;mites de sisben.">
+</a>
+</div>
+</div>
+</section>
+
+<aside class="asir">
+
+</aside>
+
+<footer>
+
+</footer>
+</body>
+</html>
